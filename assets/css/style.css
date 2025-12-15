@@ -1,0 +1,39 @@
+/* Make carousel height consistent */
+.carousel-item {
+  height: 100vh; /* or 500px */
+  position: relative;
+}
+
+/* Make image fill slide */
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1); /* start zoomed in */
+  will-change: transform;
+}
+
+/* Animate ONLY the active slide */
+.carousel-item.active img {
+  animation: zoomOut 10s linear forwards;
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* dark overlay */
+  z-index: 1;
+}
+
+/* Make sure caption stays above overlay */
+.carousel-caption {
+  z-index: 2;
+}
