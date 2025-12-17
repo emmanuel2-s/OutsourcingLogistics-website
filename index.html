@@ -57,6 +57,11 @@
       href="assets/css/bootstrap-5.0.2-dist/css/bootstrap.min.css"
     />
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
     <!-- Custom styles for this template -->
     <link href="assets/css/features.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -497,6 +502,48 @@
         </div>
       </div>
 
+      <section class="stats-section">
+        <div class="container">
+          <div class="row text-center text-white">
+            <!-- Item 1 -->
+            <div class="col-6 col-md-3 mb-4">
+              <div class="icon-circle mb-3">
+                <i class="bi bi-gem"></i>
+              </div>
+              <h2 class="fw-bold counter" data-target="105">0</h2>
+              <p class="text-uppercase small">Complete Projects</p>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="col-6 col-md-3 mb-4">
+              <div class="icon-circle mb-3">
+                <i class="bi bi-star"></i>
+              </div>
+              <h2 class="fw-bold counter" data-target="100">0</h2>
+              <p class="text-uppercase small">Happy Clients</p>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="col-6 col-md-3 mb-4">
+              <div class="icon-circle mb-3">
+                <i class="bi bi-layers"></i>
+              </div>
+              <h2 class="fw-bold counter" data-target="104">0</h2>
+              <p class="text-uppercase small">Present Projects</p>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="col-6 col-md-3 mb-4">
+              <div class="icon-circle mb-3">
+                <i class="bi bi-people"></i>
+              </div>
+              <h2 class="fw-bold counter" data-target="50">0</h2>
+              <p class="text-uppercase small">Total Employees</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="b-example-divider"></div>
 
       <!-- WHAT WE ARE SECTION END-->
@@ -505,10 +552,23 @@
   ================================================== -->
       <!-- Wrap the rest of the page in another container to center all the content. -->
 
+      <hr class="featurette-divider" />
+
       <div class="container marketing">
         <!-- Three columns of text below the carousel -->
         <div class="row">
-          <div class="col-lg-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/media/teams/director-11.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text fs-5">HR MANAGER</p>
+              <p class="card-text fs-7">ONALO JUDE KINGSLEY</p>
+            </div>
+          </div>
+          <!-- <div class="col-lg-4">
             <svg
               class="bd-placeholder-img rounded-circle"
               width="140"
@@ -532,7 +592,7 @@
             <p>
               <a class="btn btn-secondary" href="#">View details &raquo;</a>
             </p>
-          </div>
+          </div> -->
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <svg
@@ -702,26 +762,81 @@
 
         <hr class="featurette-divider" />
 
+        <!-- <hr class="featurette-divider" /> -->
         <!-- /END THE FEATURETTES -->
       </div>
       <!-- /.container -->
-
-      <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>
-          &copy; 2017–2021 Company, Inc. &middot;
-          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
-        </p>
-      </footer>
     </main>
 
-    <!-- <script
-      src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script> -->
+    <footer class="site-footer text-white">
+      <div class="container">
+        <!-- Top Row -->
+        <div class="row mb-4 align-items-center">
+          <!-- Logo -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="assets/media/logo/jjp-logo-black-removebg.png"
+              alt="JJP Mega Chain Logo"
+              class="footer-logo mb-3"
+            />
+            <p class="small">
+              Reliable outsourcing and logistics solutions designed to support
+              business growth and operational efficiency.
+            </p>
+          </div>
+
+          <!-- Location -->
+          <div class="col-md-4 mb-4">
+            <h6 class="text-uppercase fw-bold mb-3">Our Location</h6>
+            <p class="small mb-1">
+              📍 65A Aba Johnson Street, Off Adeniyi Jones,<br />
+              Ikeja Lagos, Nigeria
+            </p>
+            <p class="small mb-1">📞 +234 816 299 0516‬, +234 816 408 1636</p>
+            <p class="small mb-0">✉️ jjpmegachainresourcecompany@gmail.com</p>
+          </div>
+
+          <!-- Socials -->
+          <div class="col-md-4 mb-4">
+            <h6 class="text-uppercase fw-bold mb-3">Follow Us</h6>
+            <div class="d-flex gap-3">
+              <a
+                href="https://www.facebook.com/share/17g2wxbxqa/"
+                target="_blank"
+                class="social-icon"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/jjpmegachainoutsourcing/"
+                class="social-icon"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div
+          class="footer-bottom d-flex justify-content-between align-items-center flex-wrap pt-3"
+        >
+          <p class="mb-0 small">
+            &copy; 2025 JJP Mega Chain Outsourcing and Logistics LTD. All Rights
+            Reserved.
+          </p>
+          <div class="small">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <span class="mx-2">|</span>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="assets/css/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
