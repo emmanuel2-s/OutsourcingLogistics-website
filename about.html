@@ -222,14 +222,14 @@
     </svg>
 
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark shadow">
         <div class="container">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="index.html"
             ><img
               src="assets/media/logo/jjp-logo-black-removebg.png"
               alt="JJP Mega chain Outsourcing and Logistics LTD image"
-              width="100"
-              height="100"
+              width="80"
+              height="80"
           /></a>
           <button
             class="navbar-toggler"
@@ -245,12 +245,15 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
-                >
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about.html">About Us</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/about.html"
+                  >About Us</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/services.html">Services</a>
@@ -280,277 +283,39 @@
     </header>
 
     <main>
-      <div
-        id="myCarousel"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="50000"
+      <section
+        class="position-relative text-white"
+        style="
+          background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url('assets/media/bg-image/bg-1.jpeg') center/cover no-repeat;
+          min-height: 70vh;
+        "
       >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="assets/media/bg-image/bg-2.jpeg"
-              class="d-block w-100"
-              alt="... hero image"
-            />
-            <!-- Overlay -->
-            <div class="carousel-overlay"></div>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Smart Outsourcing. Seamless Operations.</h1>
-                <p>
-                  We help businesses focus on growth while we handle their
-                  operations, staffing, and support needs with precision and
-                  reliability.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#">Get in Touch </a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="assets/media/bg-image/bg-1.jpeg"
-              class="d-block w-100"
-              alt="... hero image"
-            />
-            <!-- Overlay -->
-            <div class="carousel-overlay"></div>
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Driving Business Success Across Every Chain</h1>
-                <p>
-                  At JJP Mega Chain Outsourcing and Logistics LTD, we combine
-                  expertise, technology, and commitment to power your business
-                  forward.
-                </p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="assets/media/bg-image/logistics-bg.jpeg"
-              class="d-block w-100"
-              alt="... hero image"
-            />
-            <!-- Overlay -->
-            <div class="carousel-overlay"></div>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Reliable Logistics. On Time. Every Time.</h1>
-                <p>
-                  From supply chain coordination to efficient delivery
-                  management, we move your goods safely, swiftly, and
-                  efficiently.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#">Contact Us</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <!-- WHAT WE ARE SECTION START-->
-      <div class="container px-4 py-5" id="hanging-icons">
-        <h2 class="pb-2 border-bottom text-center">Explore Our Services</h2>
-        <p class="mb-4 text-center">See what we can do for your company</p>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#toggles2" />
-              </svg>
-            </div>
-            <div>
-              <h2>Staff & HR Support Management</h2>
-              <p>
-                At JJP Mega Chain Outsourcing and Logistics LTD, we provide
-                reliable HR support to help businesses manage their workforce
-                efficiently. From staff recruitment and documentation to payroll
-                coordination and employee support, we ensure smooth HR
-                operations so you can focus on growing your business.
-              </p>
-              <a href="#" class="btn btn-primary"> Learn More </a>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#cpu-fill" />
-              </svg>
-            </div>
-            <div>
-              <h2>JJP Managed Staff Services</h2>
-              <p>
-                JJP Mega Chain Outsourcing and Logistics LTD provides dependable
-                managed staff services tailored to your business needs. We
-                handle staff supervision, performance monitoring, and day-to-day
-                workforce management, ensuring productivity and operational
-                efficiency.
-              </p>
-              <a href="#" class="btn btn-primary"> Learn More </a>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#tools" />
-              </svg>
-            </div>
-            <div>
-              <h2>Staff Outsourcing</h2>
-              <p>
-                Our staff outsourcing solutions give you access to skilled and
-                reliable personnel without the stress of direct hiring. We
-                manage recruitment, placement, and ongoing support, allowing
-                your business to operate smoothly and cost-effectively.
-              </p>
-              <a href="#" class="btn btn-primary"> Learn more </a>
-            </div>
-          </div>
-        </div>
-      </div>
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-md-8">
+              <h1 class="display-5 fw-bold mb-3">
+                About JJP Mega Chain Outsourcing & Logistics LTD
+              </h1>
 
-      <div class="container" id="hanging-icons">
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#toggles2" />
-              </svg>
-            </div>
-            <div>
-              <h2>Staff Payroll Management</h2>
-              <p>
-                We handle accurate and timely payroll processing, including
-                salary payments and records management, so your staff are paid
-                correctly and on time.
+              <p class="lead mb-4">
+                We provide reliable staff outsourcing, HR support, and
+                end-to-end logistics solutions that help businesses operate
+                efficiently, scale faster, and stay competitive.
               </p>
-              <a href="#" class="btn btn-primary"> Learn More </a>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#cpu-fill" />
-              </svg>
-            </div>
-            <div>
-              <h2>Recruitment Services</h2>
-              <p>
-                We source, screen, and recruit qualified candidates to meet your
-                business needs. Our recruitment process ensures you get the
-                right talent for the right role, quickly and efficiently.
-              </p>
-              <a href="#" class="btn btn-primary"> Learn More </a>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#tools" />
-              </svg>
-            </div>
-            <div>
-              <h2>Employment Contract Management</h2>
-              <p>
-                We manage employee contracts, documentation, and compliance,
-                ensuring clear terms, proper records, and smooth employment
-                relationships.
-              </p>
-              <a href="#" class="btn btn-primary">Learn more </a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <section class="stats-section">
-        <div class="container">
-          <div class="row text-center text-white">
-            <!-- Item 1 -->
-            <div class="col-6 col-md-3 mb-4">
-              <div class="text-uppercase mb-3 fw-bold fs-1">
-                Facts & Figures
-                <!-- <i class="bi bi-gem"></i> -->
-              </div>
-              <!-- <h2 class="fw-bold counter" data-target="105">0</h2>
-              <p class="text-uppercase small">Complete Projects</p> -->
-            </div>
-
-            <!-- Item 2 -->
-            <div class="col-6 col-md-3 mb-4">
-              <div class="icon-circle mb-3">
-                <i class="bi bi-star"></i>
-              </div>
-              <h2 class="fw-bold counter" data-target="2025">0</h2>
-              <p class="text-uppercase small">Established</p>
-            </div>
-
-            <!-- Item 3 -->
-            <div class="col-6 col-md-3 mb-4">
-              <div class="icon-circle mb-3">
-                <i class="bi bi-layers"></i>
-              </div>
-              <h2 class="fw-bold counter" data-target="104">0</h2>
-              <p class="text-uppercase small">Recruitments</p>
-            </div>
-
-            <!-- Item 4 -->
-            <div class="col-6 col-md-3 mb-4">
-              <div class="icon-circle mb-3">
-                <i class="bi bi-people"></i>
-              </div>
-              <h2 class="fw-bold counter" data-target="50">0</h2>
-              <p class="text-uppercase small">Happy Clients</p>
+              <a href="/services.html" class="btn btn-primary btn-lg me-2">
+                Our Services
+              </a>
+              <a href="/contactUs.html" class="btn btn-outline-light btn-lg">
+                Contact Us
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="b-example-divider"></div>
+      <!-- WHAT WE ARE SECTION START-->
 
       <!-- WHAT WE ARE SECTION END-->
 
@@ -718,6 +483,38 @@
               <rect width="100%" height="100%" fill="#eee" />
               <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
             </svg> -->
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">
+              And lastly, this one. <span class="text-muted">Checkmate.</span>
+            </h2>
+            <p class="lead">
+              And yes, this is the last block of representative placeholder
+              content. Again, not really intended to be actually read, simply
+              here to give you a better view of what this would look like with
+              some actual content. Your content.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              height="500"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee" />
+              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+            </svg>
           </div>
         </div>
 
