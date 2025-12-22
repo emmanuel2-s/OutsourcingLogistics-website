@@ -66,3 +66,25 @@ document.addEventListener("DOMContentLoaded", () => {
     logos.forEach(logo => observer.observe(logo));
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(
+        ".animate-left, .animate-right"
+    );
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const delay = entry.target.dataset.delay || 0;
+                    entry.target.style.transitionDelay = delay + "ms";
+                    entry.target.classList.add("animate-show");
+                }
+            });
+        },
+        { threshold: 0.25 }
+    );
+
+    items.forEach((item) => observer.observe(item));
+});
+
