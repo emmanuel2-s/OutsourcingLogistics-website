@@ -83,6 +83,7 @@ main {
 .card-img-top {
   height: 260px;
   object-fit: cover;
+  background-position: center;
 }
 
 .card:hover {
