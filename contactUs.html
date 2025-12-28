@@ -224,12 +224,18 @@
           <div class="row g-5 align-items-center">
             <!-- FORM -->
             <div class="col-md-7">
+              <div
+                id="form-status"
+                class="alert alert-success mt-3 d-none"
+              ></div>
+
               <h3 class="fw-bold mb-4">Send Us a Message</h3>
 
               <form
-                action="https://formspree.io/f/YOUR_FORM_ID"
+                action="https://formspree.io/f/xzdbjbqj"
                 method="POST"
                 class="bg-white p-4 rounded shadow"
+                id="contact-form"
               >
                 <div class="row g-3">
                   <div class="col-md-6">
@@ -273,8 +279,18 @@
                   </div>
 
                   <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary btn-lg">
-                      Send Message
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-lg d-flex align-items-center gap-2"
+                      id="submit-btn"
+                    >
+                      <span id="btn-text">Send Message</span>
+                      <span
+                        id="btn-spinner"
+                        class="spinner-border spinner-border-sm d-none"
+                        role="status"
+                        aria-hidden="true"
+                      ></span>
                     </button>
                   </div>
                 </div>

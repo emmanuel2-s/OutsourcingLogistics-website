@@ -88,3 +88,62 @@ document.addEventListener("DOMContentLoaded", () => {
     items.forEach((item) => observer.observe(item));
 });
 
+
+
+// Contact form function //
+
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+const submitBtn = document.getElementById("submit-btn");
+const btnText = document.getElementById("btn-text");
+const btnSpinner = document.getElementById("btn-spinner");
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    // Disable button & show spinner
+    submitBtn.disabled = true;
+    btnSpinner.classList.remove("d-none");
+    btnText.textContent = "Sending...";
+
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                Accept: "application/json",
+            },
+        });
+
+        if (response.ok) {
+            form.reset();
+            status.className = "alert alert-success mt-3";
+            status.textContent =
+                "Thank you! Your message has been sent successfully.";
+
+            // Auto-hide after 5 seconds
+            setTimeout(() => {
+                status.classList.add("d-none");
+            }, 5000);
+        } else {
+            status.className = "alert alert-danger mt-3";
+            status.textContent =
+                "Oops! Something went wrong. Please try again.";
+        }
+    } catch (error) {
+        status.className = "alert alert-danger mt-3";
+        status.textContent =
+            "Network error. Please check your internet connection.";
+    } finally {
+        // Re-enable button & hide spinner
+        submitBtn.disabled = false;
+        btnSpinner.classList.add("d-none");
+        btnText.textContent = "Send Message";
+    }
+});
+
+
+
+
